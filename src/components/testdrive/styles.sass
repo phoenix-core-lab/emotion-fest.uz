@@ -1,0 +1,74 @@
+@import '../../styles/_variables'
+@import '../../styles/_typography'
+.testdrive
+    position: relative
+    background: url('/backgroundNoise.png')
+    background-color: map-get($palete, 'whiteGray')
+    padding: 50px 0
+    height: 100vh
+    display: flex
+    align-items: center
+    justify-content: center
+    @media screen and (max-width: 1250px)
+        height: 80vh
+    @media screen and (max-width: 850px)
+        // height: 40vh
+        height: 100%
+    .textDriveCOntainer
+        width: 100%
+        height: 80vh
+        display: flex
+        align-items: center
+        justify-content: center
+        background: url("/testDrive.png")
+        border-radius: 20px
+        background-size: contain
+        background-repeat: no-repeat
+        background-position: center
+        @media screen and ( max-width: 1250px )
+            height: 60vh
+        @media screen and ( max-width: 850px )
+            height: 40vh
+        .textDriveTitle
+            background: #00000042
+            height: 100%
+            width: 100%
+            display: flex
+            align-items: center
+            justify-content: center
+            flex-direction: column
+            row-gap: 20px
+            backdrop-filter: blur(9px)
+            border-radius: 20px
+            .footerLinksBox
+                display: flex
+                flex-direction: row
+                column-gap: 10px
+                .footerLinkIcon
+                    width: 40px
+                    height: 40px
+                    background: map-get($palete, 'whiteGray')
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    border-radius: 20px
+                    transition: all 0.5s ease
+                    cursor: pointer
+                    svg
+                        transition: all 0.5s ease
+                        color: map-get($palete, 'textBlack')
+                        font-size: 24px
+                    &:hover
+                        svg
+                            color: map-get($palete, 'primary')
+            .title
+                max-width: 700px
+                text-align: center
+                +typography(32px, 500, map-get($basic, 'white'))
+                @media screen and (max-width: 850px)
+                    font-size: 20px
+                @media screen and (max-width: 550px)
+                    font-size: 16px
+                @media screen and (max-width: 550px)
+                    font-size: 14px
+                    padding: 10px

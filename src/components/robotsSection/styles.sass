@@ -1,0 +1,53 @@
+@import '../../styles/_variables'
+@import '../../styles/_typography'
+.sectionRobots
+    position: relative
+    background: url('/backgroundNoise.png')
+    background-color: map-get($palete, 'whiteGray')
+    padding: 50px 0
+    .robotsImage
+        position: relative
+        .img
+            width: 100%
+            object-fit: cover
+            border-radius: 10px
+        .robotsText
+            position: absolute
+            bottom: 0
+            top: 0
+            left: 0
+            right: 0
+            margin: auto
+            text-align: center
+            width: 50%
+            height: 100%
+            border-radius: 10px 10px 0 0
+            display: flex
+            align-items: center
+            @media screen and (max-width: 1200px)
+                display: flex
+                align-items: center
+                justify-content: center
+            @media screen and (max-width: 850px)
+                width: 90%
+            .text
+                +typography(32px, 500, map-get($basic, 'white'))
+                display: flex
+                align-items: center
+                justify-content: center
+                background: map-get($palete, 'primary')
+                height: 50%
+                padding: 20px
+                border-radius: 20px
+                @media screen and (max-width: 1200px)
+                    font-size: 24px
+                @media screen and (max-width: 850px)
+                    font-size: 20px
+                @media screen and (max-width: 550px)
+                    font-size: 16px
+                    margin: 0
+                @media screen and (max-width: 450px)
+                    font-size: 14px
+                    padding: 10px
+                @media screen and (max-width: 380px)
+                    font-size: 14px
