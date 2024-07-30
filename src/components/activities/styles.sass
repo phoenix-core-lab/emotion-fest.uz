@@ -12,25 +12,50 @@
             display: flex
             align-items: center
             justify-content: space-between
+            flex-direction: column
+            border-radius: 20px
+            padding: 20px
+            background: map-get($palete, 'primary')
+            row-gap: 20px
             @media screen and (max-width: 850px)
                 flex-direction: column
                 align-items: start
             .topTitle
                 .title
-                    +typography(48px, 600, map-get($palete, 'primary'))
+                    +typography(64px, 600, map-get($basic, 'white'))
                     @media screen and (max-width: 850px)
                         font-size: 32px
             .topBody
                 display: flex
-                flex-direction: column
+                flex-direction: row
+                justify-content: space-between
                 row-gap: 20px
-                max-width: 500px
+                width: 100%
                 @media screen and (max-width: 850px)
                     max-width: 100%
+                    flex-direction: column
                 .bodyText
+                    width: 50%
+                    @media screen and (max-width: 850px)
+                        width: 100%
                     .text
+                        margin: 0
                         line-height: 180%
-                        +typography(16px, 500, map-get($basic, 'black'))
+                        +typography(16px, 500, map-get($basic, 'white'))
+                a
+                    width: 50%
+                    display: flex
+                    justify-content: end
+                    text-decoration: none
+                    @media screen and (max-width: 850px)
+                        width: 100%
+                    .btn
+                        border: 1px solid map-get($basic, 'white')
+                        color: map-get($basic, 'white')
+                        padding: 20px 20px
+                        width: 50%
+                        @media screen and (max-width: 850px)
+                            width: 100%
         .activitiesItems
             display: flex
             justify-content: space-between

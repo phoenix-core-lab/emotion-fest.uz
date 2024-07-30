@@ -1,0 +1,42 @@
+@import '../../styles/_variables'
+@import '../../styles/_typography'
+.goldSponsors
+    padding: 50px 0
+    .goldSponsorsContainer
+        display: flex
+        flex-direction: column
+        row-gap: 40px
+        .goldTitle
+            .title
+                text-align: center
+                +typography(42px, 700, map-get($basic, 'black'))
+        .items
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            column-gap: 50px
+            width: 100%
+            @media screen and (max-width: 850px)
+                flex-direction: column
+                row-gap: 20px
+            .goldItem
+                border: 4px solid #dcd859
+                border-radius: 100px 0 100px 0
+                background: transparent
+                transition: all 0.5s ease
+                width: 50%
+                height: 400px
+                display: flex
+                justify-content: center
+                align-items: center
+                @media screen and (max-width: 850px)
+                    width: 100%
+                .img
+                    border-radius: 20px
+                    width: 300px
+                    height: 300px
+                    object-fit: cover
+                    transition: all 0.5s ease
+                &:hover
+                    .img
+                        scale: 1.1

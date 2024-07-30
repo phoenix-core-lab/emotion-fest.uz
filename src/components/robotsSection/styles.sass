@@ -28,26 +28,49 @@
                 display: flex
                 align-items: center
                 justify-content: center
-            @media screen and (max-width: 850px)
+            @media screen and (max-width: 991px)
                 width: 90%
-            .text
-                +typography(32px, 500, map-get($basic, 'white'))
+            .robotsTextContainer
                 display: flex
                 align-items: center
                 justify-content: center
+                flex-direction: column
                 background: map-get($palete, 'primary')
                 height: 50%
                 padding: 20px
                 border-radius: 20px
-                @media screen and (max-width: 1200px)
-                    font-size: 24px
-                @media screen and (max-width: 850px)
-                    font-size: 20px
-                @media screen and (max-width: 550px)
-                    font-size: 16px
+                @media screen and (max-width: 680px)
+                    height: 80%
+                .title
+                    +typography(32px, 600, map-get($basic, 'white'))
+                    margin-bottom: 20px
+                    @media screen and (max-width: 550px)
+                        font-size: 20px
+                        margin-bottom: 10px
+                    @media screen and (max-width: 420px)
+                        font-size: 18px
+                        margin: 0
+                .text
+                    +typography(24px, 500, map-get($basic, 'white'))
                     margin: 0
-                @media screen and (max-width: 450px)
-                    font-size: 14px
-                    padding: 10px
-                @media screen and (max-width: 380px)
-                    font-size: 14px
+                    margin-bottom: 20px
+                    @media screen and (max-width: 1200px)
+                        font-size: 24px
+                    @media screen and (max-width: 850px)
+                        font-size: 20px
+                    @media screen and (max-width: 550px)
+                        font-size: 16px
+                        margin: 0
+                    @media screen and (max-width: 450px)
+                        font-size: 13px
+                        margin: 5px 0
+                        padding: 0
+                    @media screen and (max-width: 380px)
+                        font-size: 14px
+                .textMain
+                    +typography(26px, 700, map-get($basic, 'white'))
+                    @media screen and (max-width: 550px)
+                        font-size: 18px
+                        margin: 0
+                    @media screen and (max-width: 420px)
+                        font-size: 16px

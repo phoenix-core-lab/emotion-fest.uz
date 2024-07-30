@@ -4,9 +4,11 @@ import Card from "@/components/cards";
 import Contacts from "@/components/contacts";
 import { firstTimeline, projects, secondTimeline, timeLine } from "@/components/data";
 import Festival from "@/components/festival";
+import GoldSponsors from "@/components/goldsponsors";
 import IntroBlock from "@/components/intro";
 import ProgramBLock from "@/components/program";
 import SectionRobots from "@/components/robotsSection";
+import ShowPage from "@/components/showpage";
 import TestDrive from "@/components/testdrive";
 import Timeline from "@/components/timeline";
 import Unique from "@/components/unique";
@@ -15,6 +17,7 @@ import Lenis from "@studio-freight/lenis";
 import { useScroll } from "framer-motion";
 import { useEffect, useRef } from "react";
 import {ToastContainer } from 'react-toastify';
+import { FaArrowDown } from "react-icons/fa";
 import "react-toastify/dist/ReactToastify.css";
 
 
@@ -41,9 +44,13 @@ export default function Home() {
     <main  className='main' style={{paddingTop: '100px'}}>
       <ToastContainer/>
       <IntroBlock/>
+      {/* <GoldSponsors/> */}
       <Unique/>
       <WelcomeToFest/>
-      
+      <div className='cardSkroll'>
+        <p className='text'>Листайте</p>
+        <FaArrowDown />
+      </div>
       {
         projects.map( (project, i) => {
           const targetScale = 1 - ( (projects.length - i) * 0.05);
@@ -51,12 +58,13 @@ export default function Home() {
         })
       }
       <TestDrive/>
+      <ShowPage/>
       <Festival/>
       <Activities/>
       <ProgramBLock/>
-      <Timeline data={firstTimeline } />
+      {/* <Timeline data={firstTimeline } /> */}
       <SectionRobots/>
-      <Timeline data={secondTimeline } />
+      {/* <Timeline data={secondTimeline } />ы */}
       <Contacts/>
       {/* <Unique/>
       <WelcomeToFest/>

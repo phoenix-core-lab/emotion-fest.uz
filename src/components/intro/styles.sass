@@ -20,7 +20,7 @@
                 width: 100%
                 .introTitle
                     .title
-                        +typography(72px, 600, map-get($palete, 'primary'))
+                        +typography(64px, 600, map-get($palete, 'primary'))
                         @media screen and (max-width: 1350px)
                             font-size: 64px
                         @media screen and (max-width: 1100px)
@@ -57,7 +57,7 @@
                     .introLink
                         .link
                             line-height: 140%
-                            +typography(24px, 500, map-get($palete, 'textBlack'))
+                            +typography(32px, 700, map-get($palete, 'primary'))
                             transition: all 0.5s ease
                             &:hover
                                 color: map-get($palete, 'primary')
@@ -87,6 +87,10 @@
                 column-gap: 20px
                 flex-direction: column
                 width: 100%
+                .introBtnsGroup
+                    display: flex
+                    flex-direction: row
+                    column-gap: 10px
                 .partenersContainer
                     display: flex
                     align-items: center
@@ -130,6 +134,18 @@
                             font-size: 20px
                         @media screen and (max-width: 1100px)
                             font-weight: 600
+                        .registartionBtn
+                            cursor: pointer
+                            color: map-get($palete, 'primary')
+                            text-decoration: none
+                .btn
+                    width: 100%
+                    background: map-get($palete, 'primary')
+                    border: 1px solid map-get($palete, 'primary')
+                    color: map-get($basic, 'white')
+                    padding: 30px 20px
+                    font-size: 24px
+                    letter-spacing: 0.2rem
                 .line
                     width: 100%
                     height: 5px
@@ -137,6 +153,7 @@
                     color: map-get($palete, 'textGray')
                     display: block
                     position: relative
+                    margin-top: 10px
                     &::before
                         content: ''
                         width: 100%

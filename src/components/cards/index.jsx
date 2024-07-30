@@ -1,10 +1,12 @@
 "use client";
 import Image from "next/image";
 import { useTransform, motion, useScroll } from "framer-motion";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
+import { FaArrowDown } from "react-icons/fa";
+
 import "./styles.sass";
 
-const Card = ({ i, title, description, src, url, color, progress, range, targetScale }) => {
+const Card = ({ i, title, description1, description2, src, url, color, progress, range, targetScale }) => {
   const container = useRef(null);
   const { scrollYProgress } = useScroll({
     target: container,
@@ -26,7 +28,8 @@ const Card = ({ i, title, description, src, url, color, progress, range, targetS
         <h2>{title}</h2>
         <div className='body'>
           <div className='description'>
-            <p>{description}</p>
+            <p>{description1}</p>
+            <p>{description2}</p>
           </div>
 
           <div className='imageContainer'>

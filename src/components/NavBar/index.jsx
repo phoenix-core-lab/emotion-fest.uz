@@ -26,16 +26,24 @@ const NavBar = ({ burgerIsOpen }) => {
             </Link>
             <Link
               className='navLink'
+              href='#showPage'
+            >
+              Экспо
+            </Link>
+            <Link
+              className='navLink'
               href='#testDrive'
             >
               Тест-драйв
             </Link>
-            <Link
+
+            {/* <Link
               className='navLink'
               href='#program'
             >
               Программа
-            </Link>
+            </Link> */}
+
             <Link
               className='navLink'
               href='#activities'

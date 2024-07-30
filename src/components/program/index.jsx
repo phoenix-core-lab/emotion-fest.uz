@@ -1,11 +1,11 @@
 import React from "react";
-import "./styles.sass";
 import Button from "../UI/button";
+import "./styles.sass";
 
 const ProgramBLock = () => {
   return (
     <div
-      className='programBLock'
+      className='programBlock'
       id='openTalk'
     >
       <div className='programBlockCard'>
@@ -26,8 +26,10 @@ const ProgramBLock = () => {
             <div className='itemSubtitle'>
               <p className='subtitle'>
                 {/* Интересуетесь электромобилями и хотели бы провести тест-драйв моделей 2024 года */}
-                Мы обсудим важные вопросы, связанные с современным электротранспортом. Вы сможете задать свой вопрос и
-                получить ответы от лидеров индустрии и неравнодушных к экологии людей.
+                Мы обсудим важные вопросы, связанные с современным электротранспортом.
+              </p>
+              <p className='subtitle'>
+                Вы сможете задать свой вопрос и получить ответы от лидеров индустрии и неравнодушных к экологии людей.
               </p>
             </div>
             <a href='#contacts'>

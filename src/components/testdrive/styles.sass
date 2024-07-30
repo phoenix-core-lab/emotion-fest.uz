@@ -72,3 +72,153 @@
                 @media screen and (max-width: 550px)
                     font-size: 14px
                     padding: 10px
+.testDriveBlock
+    position: relative
+    background: url('/backgroundNoise.png')
+    background-color: map-get($palete, 'whiteGray')
+    padding: 50px 0
+    height: 100vh
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 100%
+    @media screen and (max-width: 991px)
+        height: 100%
+    .testDriveContainer
+        border-radius: 0 400px 0 0
+        margin-right: 200px
+        display: flex
+        justify-content: flex-start
+        padding: 100px
+        @media screen and (max-width:1250px)
+            margin-right: 100px
+        @media screen and (max-width:1050px)
+            padding: 100px 50px
+            margin-right: 50px
+        @media screen and (max-width:991px)
+            border-radius: 0
+            margin-right: 0
+        @media screen and (max-width: 550px)
+            padding: 25px 20px
+        .testDriveItems
+            display: flex
+            flex-direction: column
+            row-gap: 50px
+            position: relative
+            .button-group
+                display: flex
+                column-gap: 12px
+                position: absolute
+                bottom: 0
+                top: 145px
+                margin: auto
+                justify-content: center
+                align-items: center
+                left: 300px
+                @media screen and (max-width: 850px)
+                    left: 0
+                    top: -113%
+                @media screen and (max-width: 550px)
+                    left: 0
+                    top: -3%
+                    right: -75%
+                @media screen and (max-width: 420px)
+                    left: 0
+                    top: -30%
+                    right: -75%
+                .arrow-left,
+                .arrow-right
+                    width: 39px
+                    height: 39px
+                    border: 1px solid map-get($palete, 'primary')
+                    border-radius: 50px
+                    background: map-get($palete, 'primary')
+                    transition: all 0.5s ease
+                    cursor: pointer
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    svg
+                        color: map-get($basic, 'white')
+                    &:hover
+                        background: map-get($palete, 'primary')
+                        i
+                            color: map-get($basic, 'white')
+            .testDriveDescription
+                display: flex
+                align-items: start
+                justify-content: space-between
+                @media screen and (max-width: 1250px)
+                    column-gap: 50px
+                @media screen and (max-width: 850px)
+                    flex-direction: column
+                    row-gap: 20px
+                .descriptionImage
+                    width: 50%
+                    display: flex
+                    max-width: 400px
+                    border-radius: 50%
+                    @media screen and (max-width: 850px)
+                        max-width: 100%
+                        width: 100%
+                    .img
+                        max-width: 400px
+                        width: 100%
+                        @media screen and (max-width: 850px)
+                            max-width: 100%
+                        @media screen and (max-width: 550px)
+                            max-width: 70%
+                .description
+                    width: 50%
+                    @media screen and (max-width: 850px)
+                        width: 100%
+                    .descriptionTitle
+                        .title
+                            text-transform: uppercase
+                            +typography(48px, 400, map-get($palete, 'textBlack'))
+                            @media screen and (max-width: 1250px)
+                                font-size: 32px
+                            @media screen and (max-width:1050px)
+                                font-size: 28xp
+                    .descriptionSubTitle
+                        .subtitle
+                            margin: 10px 0
+                            text-transform: uppercase
+                            +typography(32px, 400, map-get($palete, 'textBlack'))
+                            @media screen and (max-width: 1250px)
+                                font-size: 24px
+                            @media screen and (max-width:1050px)
+                                font-size: 20px
+                    .descriptionText
+                        .text
+                            margin: 0
+                            line-height: 140%
+                            +typography(22px, 400, map-get($palete, 'textBlack'))
+                            @media screen and (max-width: 1250px)
+                                font-size: 20px
+                            @media screen and (max-width:1050px)
+                                font-size: 18px
+            .testDriveInformation
+                display: flex
+                flex-direction: row
+                justify-content: space-between
+                width: 100%
+                .information
+                    position: relative
+                    width: 33.33333%
+                    display: flex
+                    justify-content: center
+                    .number
+                        +typography(48px, 700, map-get($palete, 'textBlack'))
+                        @media screen and (max-width: 1250px)
+                            font-size: 32px
+                        .text
+                            +typography(24px, 400, map-get($palete, 'textBlack'))
+                    .line
+                        position: absolute
+                        content: ''
+                        height: 100%
+                        width: 2px
+                        right: 0
+                        color: map-get($palete, 'textBlack')
+                        background: map-get($palete, 'textBlack')

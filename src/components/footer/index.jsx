@@ -62,12 +62,12 @@ const Footer = () => {
               >
                 Тест-драйв
               </Link>
-              <Link
+              {/* <Link
                 className='link'
                 href='#program'
               >
                 Программа
-              </Link>
+              </Link> */}
               <Link
                 className='link'
                 href='#activities'

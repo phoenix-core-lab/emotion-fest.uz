@@ -52,17 +52,6 @@ const Header = ({ bgBlack }) => {
             <NavBar burgerIsOpen={burgerIsOpen} />
           </div>
           <div className='headerButton'>
-            <Button onClick={() => setModal2Open(true)}>Стать участником</Button>
-            <Modal
-              // title='Vertically centered modal dialog'
-              centered
-              open={modal2Open}
-              onOk={() => setModal2Open(false)}
-              onCancel={() => setModal2Open(false)}
-              className='modalBecomeAMember'
-            >
-              <ModalBecomeAMember />
-            </Modal>
             <Link
               href='https://www.google.com/maps/place/Axelon+Karting+Club/@41.3281093,69.2649548,17.56z/data=!4m6!3m5!1s0x38ae8b4183b90cf3:0x856f6a9d7b3b76fb!8m2!3d41.3281368!4d69.2666474!16s%2Fg%2F11c1rt72wv?entry=ttu'
               className='location'

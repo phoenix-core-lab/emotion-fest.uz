@@ -14,16 +14,17 @@ const Unique = () => {
             <div className='uniqueTitle'>
               <h2 className='title'>
                 {" "}
-                <span className='primary'>E-motion — </span> это уникальная платформа
+                <span className='primary'>E-motion — </span> это больше чем выставка, <br /> это праздник новых
+                технологий и эмоций
               </h2>
             </div>
-            <div className='uniqueSubtitle'>
+            {/* <div className='uniqueSubtitle'>
               <p className='subtitle'>
                 E-Motion — это первый фестиваль, посвящённый экологически чистому транспорту и устойчивому развитию. Мы
                 хотим вдохновить вас на использование экологичных решений в повседневной жизни и показать, как это может
                 быть просто и интересно!
               </p>
-            </div>
+            </div> */}
           </div>
           <div className='uniqueItem itemBottom'>
             <div className='imageUniqueBlock littleImage'>

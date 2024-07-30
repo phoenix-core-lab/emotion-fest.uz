@@ -18,8 +18,8 @@ const Activities = () => {
             <div className='topBody'>
               <div className='bodyText'>
                 <p className='text'>
-                  Приходите на наш фест и вас ждут приятные активности. Где вы сможете хорошо провести время и отвлечься
-                  от окружающего мира.
+                  Приходите на наш фест и вас ждут активности, где вы сможете хорошо провести время и получить яркие
+                  впечатления.
                 </p>
               </div>
               <Link href='#contacts'>
@@ -54,10 +54,10 @@ const Activities = () => {
             <div className='item'>
               <span className='dot'></span>
               <div className='itemTitle'>
-                <h4 className='title'>Эксклюзивная выставка</h4>
+                <h4 className='title'>Серия лекций от экспертов</h4>
               </div>
               <div className='itemText'>
-                <p className='text'>Поддержите локальные бренды и найдите особенные подарки для себя и своих близких</p>
+                <p className='text'>Эксперты поделятся с вами современными знаниями и развеют мифы об экологии.</p>
               </div>
             </div>
           </div>
