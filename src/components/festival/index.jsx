@@ -5,11 +5,11 @@ const Festival = () => {
     <section className='festival'>
       <div className='container'>
         <div className='festivalImage'>
-          <img
+          {/* <img
             src='/manOnAction.jpeg'
             alt='festivalimage'
             className='img'
-          />
+          /> */}
           <div className='festivalText'>
             <div className='festivalTextContainer'>
               <h4 className='title'>Сюрприз!</h4>

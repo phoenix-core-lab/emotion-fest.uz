@@ -5,11 +5,6 @@ const SectionRobots = () => {
     <section className='sectionRobots'>
       <div className='container'>
         <div className='robotsImage'>
-          <img
-            src='/fight.jpg'
-            alt='robots'
-            className='img'
-          />
           <div className='robotsText'>
             <div className='robotsTextContainer'>
               <h4 className='title'>Станьте свидетелем эпической битвы роботов!</h4>

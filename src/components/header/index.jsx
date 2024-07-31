@@ -27,7 +27,7 @@ const Header = ({ bgBlack }) => {
   const [modal2Open, setModal2Open] = useState(false);
 
   return (
-    <header className={`header ${scroll ? "bgFirst" : ""}`}>
+    <header className='header  bgFirst'>
       <div className=' container'>
         <div className='headerItems'>
           <div className='headerItem'>
