@@ -1,22 +1,23 @@
 @import '../../../styles/_variables'
 @import '../../../styles/_typography'
 .btn
-    background: transparent
+    background: map-get($palete, 'primary')
     border-radius: 50px
-    +typography(16px, 700, map-get($palete, 'textBlack'))
+    +typography(16px, 700, map-get($basic, 'white'))
     border: 1px solid map-get($palete, 'textBlack')
     padding: 10px
     transition: all 0.5s ease
     cursor: pointer
     width: 200px
+    border-color: map-get($palete, 'primary')
     @media screen and (max-width: 991px)
         font-size: 15px
     @media screen and (max-width: 640px)
         font-size: 14px
     &:hover
-        background: map-get($palete, 'primary')
-        border-color: map-get($palete, 'primary')
-        color: map-get($basic, 'white')
+        background: transparent
+        color: map-get($palete, 'textBlack')
+        border: 1px solid map-get($palete, 'textBlack')
 
 .secondaryFilled
     background: #262626
