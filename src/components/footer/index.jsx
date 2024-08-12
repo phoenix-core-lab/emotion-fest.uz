@@ -37,12 +37,18 @@ const Footer = () => {
               </p>
             </div> */}
             <div className='footerLinksBox'>
-              <div className='footerLinkIcon'>
+              <Link
+                href='https://t.me/emotionfestuz'
+                className='footerLinkIcon'
+              >
                 <FaTelegramPlane />
-              </div>
-              <div className='footerLinkIcon'>
+              </Link>
+              <Link
+                href='https://www.instagram.com/emotionfestuz/?utm_source=ig_web_button_share_sheet'
+                className='footerLinkIcon'
+              >
                 <FaInstagram />
-              </div>
+              </Link>
             </div>
           </div>
           <div className='footerNavInfo'>

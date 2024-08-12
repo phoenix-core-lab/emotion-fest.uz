@@ -8,6 +8,7 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 import "./styles.sass";
 import "swiper/css";
+import Link from "next/link";
 
 const TestDrive = () => {
   // const testDriveItems = [
@@ -68,12 +69,18 @@ const TestDrive = () => {
               Следите за новостями и подписывайтесь на наши социальные сети, чтобы узнать информацию первыми.
             </h3>
             <div className='footerLinksBox'>
-              <div className='footerLinkIcon'>
+              <Link
+                href='https://t.me/emotionfestuz'
+                className='footerLinkIcon'
+              >
                 <FaTelegramPlane />
-              </div>
-              <div className='footerLinkIcon'>
+              </Link>
+              <Link
+                href='https://www.instagram.com/emotionfestuz/?utm_source=ig_web_button_share_sheet'
+                className='footerLinkIcon'
+              >
                 <FaInstagram />
-              </div>
+              </Link>
             </div>
           </div>
         </div>
