@@ -4,27 +4,16 @@ import { usePathname } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import NavBar from "../NavBar";
-import Button from "../UI/button";
 import { FaLocationDot } from "react-icons/fa6";
 
 import "./styles.sass";
-import { Modal } from "antd";
-import ModalBecomeAMember from "../modalBecomeAMember";
 
 const Header = ({ bgBlack }) => {
   const [burgerIsOpen, setBurgerIsOpen] = useState(false);
-  const [scroll, setScroll] = useState(false);
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      setScroll(window.scrollY > 50);
-    });
-  }, []);
 
   const toggleMenu = (toOpen) => {
     setBurgerIsOpen(toOpen);
   };
-
-  const [modal2Open, setModal2Open] = useState(false);
 
   return (
     <header className='header  bgFirst'>
