@@ -11,6 +11,7 @@ import ModalBecomeAMember from "../modalBecomeAMember";
 
 const IntroBlock = () => {
   const [modal2Open, setModal2Open] = useState(false);
+  const [modalOpen, setModalOpen] = useState(false);
   return (
     <div
       className='into'
@@ -65,17 +66,7 @@ const IntroBlock = () => {
               </div>
               <div className='introBtnsGroup'>
                 <Button onClick={() => setModal2Open(true)}>Cтать партнером</Button>
-                <Button onClick={() => setModal2Open(true)}>Стать участником выставки</Button>
-                <Modal
-                  // title='Vertically centered modal dialog'
-                  centered
-                  open={modal2Open}
-                  onOk={() => setModal2Open(false)}
-                  onCancel={() => setModal2Open(false)}
-                  className='modalBecomeAMember'
-                >
-                  <ModalBecomeAMember />
-                </Modal>
+                <Button onClick={() => setModalOpen(true)}>Стать участником выставки</Button>
                 <Modal
                   // title='Vertically centered modal dialog'
                   centered
@@ -85,6 +76,16 @@ const IntroBlock = () => {
                   className='modalBecomeAMember'
                 >
                   <ModalBecomePartner />
+                </Modal>
+                <Modal
+                  // title='Vertically centered modal dialog'
+                  centered
+                  open={modalOpen}
+                  onOk={() => setModalOpen(false)}
+                  onCancel={() => setModalOpen(false)}
+                  className='modalBecomeAMember'
+                >
+                  <ModalBecomeAMember />
                 </Modal>
               </div>
             </div>

@@ -68,6 +68,7 @@ const ModalBecomePartner = () => {
           required
         />
       </div>
+
       <div className='inputBox'>
         <input
           type='text'
