@@ -18,14 +18,18 @@
     border-radius: 25px
     padding: 50px
     transform-origin: top
-    @media screen and (max-width: 450px)
+    @media screen and (max-width: 550px)
         padding: 30px 20px
+        height: 480px
+    @media screen and (max-width: 450px)
         height: 400px
     h2
         text-align: center
         +typography(32px, 700, map-get($palete, 'textBlack'))
         margin: 0px
         font-size: 28px
+        @media screen and (max-width: 450px)
+            font-size: 24px
 
     .body
         display: flex
@@ -42,10 +46,14 @@
         p
             line-height: 140%
             +typography(16px, 500, map-get($palete, 'textBlack'))
+            @media screen and (max-width: 450px)
+                font-size: 14px
         &::first-letter
             // font-size: 28px
             // font-family: 'Title'
             +typography(28px, 500, map-get($palete, 'textBlack'))
+            @media screen and (max-width: 450px)
+                font-size: 24px
 
         span
             display: flex
