@@ -6,23 +6,30 @@ const GoldSponsors = () => {
     <div className='goldSponsors'>
       <div className='container'>
         <div className='goldSponsorsContainer'>
-          <div className='goldTitle'>
-            <h3 className='title'>Золотые партнеры</h3>
-          </div>
           <div className='items'>
-            <div className='goldItem'>
-              <img
-                className='img'
-                src='/car2.jpg'
-                alt=''
-              />
+            <div className='gold'>
+              <div className='goldTitle'>
+                <h3 className='title'>Генеральный партнер</h3>
+              </div>
+              <div className='goldItem'>
+                <img
+                  className='img'
+                  src='/car2.jpg'
+                  alt=''
+                />
+              </div>
             </div>
-            <div className='goldItem'>
-              <img
-                className='img'
-                src='/car2.jpg'
-                alt=''
-              />
+            <div className='gold'>
+              <div className='goldTitle'>
+                <h3 className='title'>Официальный партнер</h3>
+              </div>
+              <div className='goldItem'>
+                <img
+                  className='img'
+                  src='/car2.jpg'
+                  alt=''
+                />
+              </div>
             </div>
           </div>
         </div>
