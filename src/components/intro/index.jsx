@@ -101,12 +101,12 @@ const IntroBlock = () => {
                   >
                     Зарегистрируйся
                   </Link>
-                  , стань гостем и получи шанс выиграть Iphone 15 Pro Max
+                  ,  в наших социальных сетях и не упустите шанс выиграть Iphone 15 Pro Max
                 </p>
               </div>
-              <Link href='#contacts'>
+              {/* <Link href='#contacts'>
                 <Button>Стать гостем фестиваля</Button>
-              </Link>
+              </Link> */}
               {/* <span className='line'></span> */}
             </div>
           </div>
