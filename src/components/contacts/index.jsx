@@ -54,87 +54,92 @@ const Contacts = () => {
     });
   };
   return (
-    <section
-      className='sectionContacts'
-      id='contacts'
-    >
-      <div className='container'>
-        <div className='contactsContainer'>
-          <div className='contactsInfo'>
-            <div className='contactsTitle'>
-              <h3 className='title'>Станьте гостем фестиваля.</h3>
+    <section className="sectionContacts" id="contacts">
+      <div className="container">
+        <div className="contactsContainer">
+          <div className="blurContainer">
+            <h3>
+              Регистрация на участие откроется совсем скоро. <br /> Не упустите шанс
+              посетить уникальное мероприятие!
+            </h3>
+          </div>
+          <div className="contactsInfo">
+            <div className="contactsTitle">
+              <h3 className="title">Станьте гостем фестиваля.</h3>
             </div>
-            <div className='contactsText'>
-              <p className='text'>
-                Ждем вас на фестивале E-motion! Это два дня активностей и открытий в мире экологичного транспорта.
+            <div className="contactsText">
+              <p className="text">
+                Ждем вас на фестивале E-motion! Это два дня активностей и
+                открытий в мире экологичного транспорта.
               </p>
-              <p className='text'>
-                Полезный опыт для гостей всех возрастов: образовательные мастер-классы, тест-драйвы электроавтомобилей,
-                стенды с VR-технологиями и интерактивными зонами отдыха.
+              <p className="text">
+                Полезный опыт для гостей всех возрастов: образовательные
+                мастер-классы, тест-драйвы электроавтомобилей, стенды с
+                VR-технологиями и интерактивными зонами отдыха.
               </p>
             </div>
-            <div className='contactsText'>
-              <p className='text'>Зарегистрируйтесь прямо сейчас!</p>
-              <p className='text'> Вместе мы создаем будущее!</p>
+            <div className="contactsText">
+              <p className="text">Зарегистрируйтесь прямо сейчас!</p>
+              <p className="text"> Вместе мы создаем будущее!</p>
             </div>
           </div>
           <form
-            className='contactsForm'
-            onSubmit={handleSubmit}
+            className="contactsForm"
+            // onSubmit={handleSubmit}
           >
-            <div className='inputBox'>
+            <div className="inputBox">
               <input
-                type='text'
-                className='input'
-                name='fullName'
-                placeholder='Ф.И.О'
+                type="text"
+                className="input"
+                name="fullName"
+                placeholder="Ф.И.О"
                 value={formData.fullName}
                 onChange={handleChange}
                 required
               />
             </div>
-            <div className='inputBox'>
+            <div className="inputBox">
               <input
-                type='text'
-                className='input'
-                placeholder='Возраст'
-                name='age'
+                type="text"
+                className="input"
+                placeholder="Возраст"
+                name="age"
                 value={formData.age}
                 onChange={handleChange}
                 required
               />
             </div>
-            <div className='inputBox'>
+            <div className="inputBox">
               <input
-                type='text'
-                className='input'
-                placeholder='Город'
-                name='city'
+                type="text"
+                className="input"
+                placeholder="Город"
+                name="city"
                 value={formData.city}
                 onChange={handleChange}
                 required
               />
             </div>
-            <div className='inputBox'>
+            <div className="inputBox">
               <input
-                type='email'
-                className='input'
-                placeholder='E-mail'
-                name='mail'
+                type="email"
+                className="input"
+                placeholder="E-mail"
+                name="mail"
                 value={formData.mail}
                 onChange={handleChange}
                 required
               />
             </div>
-            <div className='inputBox'>
+            <div className="inputBox">
               <IMaskInput
-                name='phone'
-                className='input'
-                placeholder='Номер телефона'
+                name="phone"
+                className="input"
+                placeholder="Номер телефона"
                 mask={Mask}
                 value={formData.phone}
                 onChange={handleChange}
-                pattern='[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}'
+                pattern="[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
                 maxLength={19}
                 required
               />
