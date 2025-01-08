@@ -37,7 +37,7 @@ const Unique = () => {
                 <div className='coverContainer'>
                   <div className='coverTitle'>
                     <h3 className='title'>
-                      300<span className='primary'>+</span>
+                      100<span className='primary'>+</span>
                     </h3>
                   </div>
                   <div className='coverText'>
