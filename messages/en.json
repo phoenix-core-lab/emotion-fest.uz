@@ -1,0 +1,168 @@
+{
+  "header": {
+    "button1": "E-motion fest",
+    "button2": "Expo",
+    "button3": "Test drive",
+    "button4": "Activities",
+    "button5": "Open-talk",
+    "button6": "Location"
+  },
+  "intro": {
+    "title": "Festival \n of Electric Cars and \n New Technologies",
+    "titleText": "Become a member of E-motion and contribute to a clean future!",
+    "title1": "We are waiting for you in August in Anchor Park",
+    "partner": {
+      "title": "Our partners",
+      "titleText": "our partners",
+      "button1": "Become a partner",
+      "button2": "Become an exhibition participant"
+    },
+    "partner1": {
+      "title": "Information partner All the most interesting from the world of IT industry and technologies",
+      "titlesilka": " https://aleminform.kz/"
+    },
+    "partner2": {
+      "title": "iMAS GROUP is an international IT company in the field of media and social media monitoring. For 11 years, we have been providing services for collecting, analyzing and interpreting media data, helping our clients make strategic decisions. Our team combines advanced technologies and an expert approach to offer high-quality analytics and support in reputation management. Among our clients are large brands and government agencies that trust us with information processing and the creation of media reports. We strive to become a reliable partner for everyone who values ​​accurate data and innovative solutions in the world of media",
+      "titlesilka": "https://imas.uz/"
+    },
+    "partner3": {
+      "title": "Bluescreen.kz is a media platform that makes technology accessible to everyone: from beginners to IT experts. Here, you’ll find helpful articles on fintech, cybersecurity, AI, blockchain, and other trends that are transforming life and business.",
+      "titlesilka": "https://bluescreen.kz/"
+    },
+    "winner": {
+      "title": "100+ Prizes",
+      "title2": "Follow the news on our social networks and don't miss your chance to win",
+      "title2green": "an iPhone 16 Pro Max"
+    }
+  },
+
+  "unique": {
+    "titleText": "E-motion — ",
+    "title": "is more than an exhibition,\n it is a celebration of new technologies and emotions",
+    "covertitle": "cars at the exhibition",
+    "coverregister": "Registration"
+  },
+  "welcome": {
+    "title": "Come to the fest",
+    "card": {
+      "title": "Interested in electric vehicles and new technologies?",
+      "titleText": "And want to test drive the 2025 models?",
+      "title2": "We will provide modern models of electric cars, electric motorcycles and electric scooters for a test drive",
+      "button": "Become a guest"
+    },
+    "card2": {
+      "title": "Do you want to spend a fun, useful and interesting weekend with your family or friends?",
+      "titleText": "We have prepared a huge number of entertainment events for guests of all ages: a concert program, performances by the best DJs of Uzbekistan, a robot battle, an open talk, an exhibition of eco-brands, food courts and market places",
+      "button": "Become a guest"
+    }
+  },
+
+  "scrool": {
+    "title": "Scroll"
+  },
+  "scrollcards": {
+    "scrollcard1": {
+      "title": "Exhibition of electric vehicles and new technologies",
+      "description1": "Discover the latest models of electric vehicles and charging stations.",
+      "description2": "Find out how they are changing our world, making it more environmentally friendly and convenient. The exhibition presents leading brands and their latest developments. You will be able to take part in test drives to choose the right electric transport for you."
+    },
+    "scrollcard2": {
+      "title": "Meet the IT projects shaping the future.",
+      "description1": "We will present new developments from leading companies and startups ready to share their achievements and ideas.",
+      "description2": "You will see how modern technologies are transforming various areas of our lives, learn about advanced solutions in the field of artificial intelligence, blockchain and Internet technologies. You will be able to discover the opportunities that appear in the world thanks to innovations."
+    },
+    "scrollcard3": {
+      "title": "Epic robot battle.",
+      "description1": "Witness an epic robot battle. ",
+      "description2": "Watch as teams of engineers build their robots and battle it out in the Octagon, aiming to knock their opponents out of the ring. Don't miss this exciting spectacle!"
+    },
+    "scrollcard4": {
+      "title": "Amateur Climbing Championship.",
+      "description1": "For lovers of active recreation, we have prepared a rock climbing championship.",
+      "description2": "Test your strength and agility! The competition will be held under the supervision of specialists, so you will be able to spend time not only interestingly, but also safely"
+    }
+  },
+  "textdrive": {
+    "title1": "Take part in test drives and find the perfect electric vehicle for you!",
+    "title2": "We will announce all information on the model range in the near future.",
+    "title3": "Follow the news and subscribe to our social networks to be the first to know the information."
+  },
+  "showblock": {
+    "title": "Exhibition of the latest technologies and eco-brands",
+    "titleText1": "We will present more than 60 local brands, where everyone will be able to find something interesting for themselves and support manufacturers of advanced technologies.",
+    "titleText2": "If you want to increase your brand awareness and attract new customers, become a participant in the exhibition!",
+    "button": "Become an exhibition participant"
+  },
+  "suprise": {
+    "title": "Surprise!",
+    "titleText1": "A famous blogger, whose name is still being kept secret, will take part in the festival.",
+    "titleText2": "You will be able to ask him questions and discuss the prospects for the development of electric transport."
+  },
+  "activities": {
+    "title": "Activities",
+    "titleText": "Come to our fest and you will find activities where you can have a good time and get vivid impressions",
+    "button": "Register",
+    "activitiesCard1": {
+      "title": "Show 'Battle of robots'",
+      "titleText": "Become a witness of an epic robot battle. Watch as teams of engineers build robots and fight in the octagon, trying to knock their opponent out of the ring. Don't miss this exciting spectacle! Enjoy tense moments and exciting twists and turns. Your support can be decisive for the winning team!"
+    },
+    "activitiesCard2": {
+      "title": "Exhibition of eco brands",
+      "titleText": "Support local brands and find special gifts for yourself and your loved ones. Discover unique products created with care for nature and health. Learn more about the development of eco-brands in Uzbekistan. Join the community of people who strive to make the world a better place!"
+    },
+    "activitiesCard3": {
+      "title": "A series of lectures from experts",
+      "titleText": "Experts will share with you modern knowledge and dispel myths about ecology. Learn about the latest research and innovations in the field of environmental protection. Get practical tips on an eco-friendly lifestyle. Questions and answers after each lecture will give you the opportunity to understand the topics discussed in more depth."
+    }
+  },
+
+  "program": {
+    "title": "Open talk",
+    "titleText1": "We will discuss important issues related to modern electric transport.",
+    "titleText2": "You will be able to ask your question and get answers from industry leaders and people who care about ecology.",
+    "button": "Become a guest"
+  },
+  "robots": {
+    "title": "Become a witness of an epic robot battle!",
+    "titleText1": "Teams of engineers will assemble their robots and battle it out in the octagon, aiming to knock their opponents out of the ring.",
+    "titleText2": "Don't miss this exciting spectacle!"
+  },
+  "registionblock": {
+    "title": "Registration for participation will open very soon.",
+    "title2": "Don't miss your chance to attend this unique event!",
+    "guest": {
+      "title": "Become a guest of the festival",
+      "titletext1": "We are waiting for you at the E-motion festival! These are two days of activities and discoveries in the world of eco-friendly transport.",
+      "titletext2": "Useful experience for guests of all ages: educational workshops, test drives of electric cars, stands with VR technologies and interactive recreation areas",
+      "titletext3": "Register now!",
+      "titletext4": "Together we create the future!"
+    }
+  },
+
+  "footer": {
+    "title1": "Navigation",
+    "title2": "Contacts",
+    "button1": "E-motion fest",
+    "button3": "Test drive",
+    "button4": "Activities",
+    "button5": "Open-talk",
+    "button6": "Uzbekistan, Tashkent, Park Anhor"
+  },
+  "registion": {
+    "title1": "Full name",
+    "title2": "Company name",
+    "title3": "City",
+    "title4": "E-mail",
+    "title5": "Phone number",
+    "title6": "Age",
+    "button": "Submit an application",
+    "toast": {
+      "success": "Congratulations, your application has been accepted!",
+      "error": "Sorry, something went wrong, try again :("
+    }
+  },
+  "toast": {
+    "success": "Congratulations, your application has been accepted!",
+    "error": "Sorry, something went wrong, try again :("
+  }
+}

@@ -1,7 +1,11 @@
 import { Montserrat } from "next/font/google";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
-import Script from "next/script"; // Импортируем next/script
+import Script from "next/script";
+import { notFound } from "next/navigation";
+import { routing } from "@/i18n/routing";
+import { getMessages } from "next-intl/server";
+import { NextIntlClientProvider } from "next-intl"; // ✅ Добавлен импорт
 import "./globals.sass";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
@@ -11,9 +15,17 @@ export const metadata = {
   description: "made for emotion fest",
 };
 
-export default function RootLayout({ children }) {
+export default async function RootLayout({ children, params }) {
+  const { locale } = params; // ✅ Убрали await
+
+  if (!routing.locales.includes(locale)) {
+    notFound();
+  }
+
+  const messages = await getMessages();
+
   return (
-    <html lang="en">
+    <html lang={locale}>
       <head>
         <link rel="icon" href="/logoico.svg" />
         <Script
@@ -41,12 +53,18 @@ export default function RootLayout({ children }) {
       <body className={montserrat.className}>
         <noscript>
           <div>
-            <img src="https://mc.yandex.ru/watch/100373346" style={{ position: "absolute", left: "-9999px" }} alt="" />
+            <img
+              src="https://mc.yandex.ru/watch/100373346"
+              style={{ position: "absolute", left: "-9999px" }}
+              alt=""
+            />
           </div>
         </noscript>
-        <Header />
-        {children}
-        <Footer />
+        <NextIntlClientProvider messages={messages}>
+          <Header />
+          {children}
+          <Footer />
+        </NextIntlClientProvider>
       </body>
     </html>
   );

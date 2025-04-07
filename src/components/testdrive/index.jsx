@@ -5,12 +5,13 @@ import { FaInstagram } from "react-icons/fa6";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Parallax } from "swiper/modules";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
-
+import { useTranslations } from "next-intl";
 import "./styles.sass";
 import "swiper/css";
 import Link from "next/link";
 
 const TestDrive = () => {
+  const t = useTranslations("textdrive");
   // const testDriveItems = [
   //   {
   //     id: 1,
@@ -56,28 +57,23 @@ const TestDrive = () => {
   //   },
   // ];
   return (
-    <div
-      className='testdrive'
-      id='testDrive'
-    >
-      <div className='container'>
-        <div className='textDriveCOntainer'>
-          <div className='textDriveTitle'>
-            <h3 className='title'>Участвуйте в тест-драйвах и найдите идеальный электротранспорт для себя!</h3>
-            <h3 className='title'> В ближайшее время мы анонсируем всю информацию по модельному ряду.</h3>
-            <h3 className='title'>
-              Следите за новостями и подписывайтесь на наши социальные сети, чтобы узнать информацию первыми.
-            </h3>
-            <div className='footerLinksBox'>
+    <div className="testdrive" id="testDrive">
+      <div className="container">
+        <div className="textDriveCOntainer">
+          <div className="textDriveTitle">
+            <h3 className="title">{t("title1")}</h3>
+            <h3 className="title">{t("title2")}</h3>
+            <h3 className="title">{t("title3")}</h3>
+            <div className="footerLinksBox">
               <Link
-                href='https://t.me/emotionfestuz'
-                className='footerLinkIcon'
+                href="https://t.me/emotionfestuz"
+                className="footerLinkIcon"
               >
                 <FaTelegramPlane />
               </Link>
               <Link
-                href='https://www.instagram.com/emotionfestuz/?utm_source=ig_web_button_share_sheet'
-                className='footerLinkIcon'
+                href="https://www.instagram.com/emotionfestuz/?utm_source=ig_web_button_share_sheet"
+                className="footerLinkIcon"
               >
                 <FaInstagram />
               </Link>

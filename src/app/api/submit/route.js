@@ -1,23 +1,27 @@
-import { NextResponse } from 'next/server';
-import { toast } from 'react-toastify';
+import { NextResponse } from "next/server";
+import { toast } from "react-toastify";
 
 export async function POST(req) {
   const { fullName, age, phone, city, mail } = await req.json();
 
-  const response = await fetch('https://script.google.com/macros/s/AKfycbxr-1Vrj5cRJSLAEY9m1kWQfg37xqDJk4Qz3Y8aMMKnuu0msDD9THoh2QPa5nEEEB3IPw/exec', {
-    method: 'POST',
+  const response = await fetch(process.env.GUEST_TABLE_API, {
+    method: "POST",
     headers: {
-      'Content-Type': 'application/json',
+      "Content-Type": "application/json",
     },
     body: JSON.stringify({ fullName, age, phone, city, mail }),
   });
 
   const result = await response.json();
-  
-  if (result.status === 'success') {
-    return NextResponse.json({ status: 'success' });
-    // toast.success('Ваша заявка принята!')
+  console.log("Ответ от Google Sheets:", result);
+  console.log("Тип result.type:", typeof result.type); // Логируем тип
+  console.log("Значение result.type:", JSON.stringify(result.type)); // Логируем точное значение
+
+  if (result.type === "success") {
+    return NextResponse.json({ status: "success" });
+    console.log("Успешная обработка данных");
   } else {
-    return NextResponse.json({ status: 'error' }, { status: 500 });
+    console.log("Ошибка при обработке данных:", result);
+    return NextResponse.json({ status: "error" }, { status: 500 });
   }
 }

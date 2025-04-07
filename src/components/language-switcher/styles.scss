@@ -1,0 +1,32 @@
+.dropdown-button {
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background: #252525;
+  border-radius: 50px;
+  column-gap: 5px;
+  transition: background-color 0.2s ease; // transition-colors
+  padding: 0px 26px;
+
+  .language-text {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 9px;
+    color: #ffffff;
+  }
+  svg {
+    width: 25px;
+    height: 40px;
+  }
+  @media screen and (max-width: 650px) {
+    .language-text {
+      line-height: 20px;
+      font-size: 12px;
+    }
+    svg {
+      width: 20px;
+      height: 25px;
+    }
+  }
+}

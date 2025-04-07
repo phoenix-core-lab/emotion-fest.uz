@@ -1,18 +1,17 @@
 import React from "react";
 import "./styles.sass";
+import { useTranslations } from "next-intl";
 const SectionRobots = () => {
+  const t = useTranslations("robots");
   return (
-    <section className='sectionRobots'>
-      <div className='container'>
-        <div className='robotsImage'>
-          <div className='robotsText'>
-            <div className='robotsTextContainer'>
-              <h4 className='title'>Станьте свидетелем эпической битвы роботов!</h4>
-              <p className='text'>
-                Команды инженеров соберут своих роботов и сразятся в октагоне, стремясь выбить соперника за пределы
-                ринга.
-              </p>
-              <p className='text textMain'>Не пропустите это увлекательное зрелище!</p>
+    <section className="sectionRobots">
+      <div className="container">
+        <div className="robotsImage">
+          <div className="robotsText">
+            <div className="robotsTextContainer">
+              <h4 className="title">{t("title")}</h4>
+              <p className="text">{t("titleText1")}</p>
+              <p className="text textMain">{t("titleText2")}</p>
             </div>
           </div>
         </div>

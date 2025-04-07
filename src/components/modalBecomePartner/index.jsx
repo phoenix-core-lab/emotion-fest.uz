@@ -4,8 +4,10 @@ import { IMaskInput } from "react-imask";
 import { toast } from "react-toastify";
 import Button from "../UI/button";
 import "./styles.sass";
+import { useTranslations } from "next-intl";
 
 const ModalBecomePartner = () => {
+  const t = useTranslations("registion");
   const [formData, setFormData] = useState({
     fullName: "",
     companyName: "",
@@ -40,9 +42,9 @@ const ModalBecomePartner = () => {
       }),
     });
     if (response.status === 200 || response.status === 201) {
-      toast.success("Поздравялем, ваша заявка принята!");
+      toast.success(t("toast.success"));
     } else {
-      toast.error("К сожалению, что-то пошло не так, попробуйте еще раз :(");
+      toast.error(t("toast.error"));
     }
     setFormData({
       fullName: "",
@@ -53,69 +55,66 @@ const ModalBecomePartner = () => {
     });
   };
   return (
-    <form
-      className='contactsForm'
-      onSubmit={handleSubmit}
-    >
-      <div className='inputBox'>
+    <form className="contactsForm" onSubmit={handleSubmit}>
+      <div className="inputBox">
         <input
-          type='text'
-          className='input'
-          name='fullName'
-          placeholder='Ф.И.О'
+          type="text"
+          className="input"
+          name="fullName"
+          placeholder={t("title1")}
           value={formData.fullName}
           onChange={handleChange}
           required
         />
       </div>
 
-      <div className='inputBox'>
+      <div className="inputBox">
         <input
-          type='text'
-          className='input'
-          placeholder='Название компании'
-          name='companyName'
+          type="text"
+          className="input"
+          placeholder={t("title2")}
+          name="companyName"
           value={formData.companyName}
           onChange={handleChange}
           required
         />
       </div>
-      <div className='inputBox'>
+      <div className="inputBox">
         <input
-          type='text'
-          className='input'
-          placeholder='Город'
-          name='city'
+          type="text"
+          className="input"
+          placeholder={t("title3")}
+          name="city"
           value={formData.city}
           onChange={handleChange}
           required
         />
       </div>
-      <div className='inputBox'>
+      <div className="inputBox">
         <input
-          type='email'
-          className='input'
-          placeholder='E-mail'
-          name='mail'
+          type="email"
+          className="input"
+          placeholder="E-mail"
+          name="mail"
           value={formData.mail}
           onChange={handleChange}
           required
         />
       </div>
-      <div className='inputBox'>
+      <div className="inputBox">
         <IMaskInput
-          name='phone'
-          className='input'
-          placeholder='Номер телефона'
+          name="phone"
+          className="input"
+          placeholder={t("title5")}
           mask={Mask}
           value={formData.phone}
           onChange={handleChange}
-          pattern='[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}'
+          pattern="[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
           maxLength={19}
           required
         />
       </div>
-      <Button>Подать заявку</Button>
+      <Button>{t("button")}</Button>
     </form>
   );
 };

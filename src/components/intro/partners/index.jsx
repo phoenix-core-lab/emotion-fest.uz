@@ -5,11 +5,29 @@ import { Autoplay } from "swiper/modules";
 // import "./styles.sass";
 import "swiper/css";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 const PartnersSlider = () => {
+  const t = useTranslations("intro");
   const PartnersSlideImages = [
-    { id: 1, img: "/imas.png", alt: "after", title: "iMAS GROUP — международная IT компания в области мониторинга СМИ и социальных сетей. На протяжении 11 лет мы предоставляем услуги по сбору, анализу и интерпретации медиа-данных, помогая нашим клиентам принимать стратегически важные решения. Наша команда объединяет передовые технологии и экспертный подход, чтобы предложить качественную аналитику и поддержку в управлении репутацией. Среди клиентов — крупные бренды и государственные структуры, которые доверяют нам обработку информации и создание медиа-отчетов. Мы стремимся стать надежным партнером для всех, кто ценит точные данные и инновационные решения в мире медиа. https://imas.uz/" },
-    { id: 2, img: "/alem.svg", alt: "after", title: "Информационный партнёр Всё самое интересное из мира IT-индустрии и технологий https://aleminform.kz/" },
+    {
+      id: 1,
+      img: "/imas.png",
+      alt: "after",
+      title: t("partner1.title") + t("partner1.titlesilka"),
+    },
+    {
+      id: 2,
+      img: "/alem.svg",
+      alt: "after",
+      title: t("partner2.title") + "\n" + t("partner2.titlesilka"),
+    },
+    {
+      id: 3,
+      img: "/Bluescreen.png",
+      alt: "after",
+      title: t("partner3.title") + "\n" + t("partner3.titlesilka"),
+    },
   ];
   return (
     <div>
@@ -24,17 +42,8 @@ const PartnersSlider = () => {
         {PartnersSlideImages.map((item, index) => (
           <SwiperSlide key={index}>
             <div className="imagesBlock">
-              <Image
-                src={item.img}
-                alt={item.alt}
-                width={100} 
-                height={100} 
-              />
-              <p className="text">
-                {
-                  item.title ? item.title : ""
-                }
-              </p>
+              <Image src={item.img} alt={item.alt} width={100} height={100} />
+              <p style={{ whiteSpace: "pre-line" }} className="text">{item.title ? item.title : ""}</p>
             </div>
           </SwiperSlide>
         ))}

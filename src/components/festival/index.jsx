@@ -1,23 +1,24 @@
 import React from "react";
 import "./styles.sass";
+import { useTranslations } from "next-intl";
 const Festival = () => {
+  const t = useTranslations("suprise");
   return (
-    <section className='festival'>
-      <div className='container'>
-        <div className='festivalImage'>
+    <section className="festival">
+      <div className="container">
+        <div className="festivalImage">
           {/* <img
             src='/manOnAction.jpeg'
             alt='festivalimage'
             className='img'
           /> */}
-          <div className='festivalText'>
-            <div className='festivalTextContainer'>
-              <h4 className='title'>Сюрприз!</h4>
-              <p className='text'>
-                В фестивале примет участие известный блогер,
-                <br /> имя которого пока держится в секрете.
+          <div className="festivalText">
+            <div className="festivalTextContainer">
+              <h4 className="title">{t("title")}</h4>
+              <p style={{ whiteSpace: "pre-line" }} className="text">
+                {t("titleText1")}
               </p>
-              <p className='text'>Вы сможете задать ему вопросы и обсудить перспективы развития электротранспорта.</p>
+              <p className="text">{t("titleText2")}</p>
             </div>
           </div>
         </div>

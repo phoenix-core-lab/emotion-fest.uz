@@ -10,72 +10,70 @@ import ModalBecomePartner from "../modalBecomePartner";
 import ModalBecomeAMember from "../modalBecomeAMember";
 import { FaTelegramPlane } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
+import { useTranslations } from "next-intl";
 
 const IntroBlock = () => {
+  const t = useTranslations("intro");
   const [modal2Open, setModal2Open] = useState(false);
   const [modalOpen, setModalOpen] = useState(false);
   return (
-    <div
-      className='into'
-      id='emotion'
-    >
-      <div className='container'>
-        <div className='introContainer'>
-          <div className='introMainInfo'>
-            <div className='introInfo'>
-              <div className='introTitle'>
-                <h1 className='title'>
-                  Фестиваль
-                  <br />
-                  Электромобилей
-                  <br />И новых технологий
-                </h1>
+    <div className="into" id="emotion">
+      <div className="container">
+        <div className="introContainer">
+          <div className="introMainInfo">
+            <div className="introInfo">
+              <div className="introTitle">
+                <h1 style={{ whiteSpace: "pre-line" }} className="title">{t("title")}</h1>
               </div>
-              <div className='introSubtitle'>
-                <p className='subtitle'>Станьте участником E-motion и внесите свой вклад в чистое будущее!</p>
+              <div className="introSubtitle">
+                <p className="subtitle">{t("titleText")}</p>
               </div>
-              <div className='introButtonsGroup'>
-                <div className='introLink'>
+              <div className="introButtonsGroup">
+                <div className="introLink">
                   <Link
-                    className='link'
-                    target='_blank'
-                    href='https://yandex.uz/maps/org/15793535063/?from=api-maps&ll=69.266820%2C41.135318&mode=search&origin=jsapi_2_1_79&pt=37.8%2C55.8~37.6%2C55.847~37.738521%2C55.684758~37.715175%2C55.833436~37.529789%2C55.687086~37.614924%2C55.782392~37.656123%2C55.642063~37.487208%2C55.826479~37.435023%2C55.694843~37.814052%2C55.790139&sll=69.266820%2C41.135318&text=%D0%90%D0%BD%D1%85%D0%BE%D1%80&z=9'
+                    className="link"
+                    target="_blank"
+                    href="https://yandex.uz/maps/org/15793535063/?from=api-maps&ll=69.266820%2C41.135318&mode=search&origin=jsapi_2_1_79&pt=37.8%2C55.8~37.6%2C55.847~37.738521%2C55.684758~37.715175%2C55.833436~37.529789%2C55.687086~37.614924%2C55.782392~37.656123%2C55.642063~37.487208%2C55.826479~37.435023%2C55.694843~37.814052%2C55.790139&sll=69.266820%2C41.135318&text=%D0%90%D0%BD%D1%85%D0%BE%D1%80&z=9"
                   >
-                    Ждем вас в августе в парке Анхор
+                    {t("title1")}
                   </Link>
                 </div>
               </div>
             </div>
-            <div className='infoImage'>
+            <div className="infoImage">
               <Image
-                src='/introImage.svg'
-                alt='introImage'
-                className='img'
+                src="/introImage.svg"
+                alt="introImage"
+                className="img"
                 width={100}
                 height={100}
               />
             </div>
           </div>
-          <div className='introBottomInfo'>
-            <div className='partners'>
-              <div className='partenersContainer'>
-                <div className='partnersTitle'>
-                  <h6 className='title'>Наши партнеры: </h6>
+          <div className="introBottomInfo">
+            <div className="partners">
+              <div className="partenersContainer">
+                <div className="partnersTitle">
+                  <h6 className="title">{t("partner.title")}</h6>
                 </div>
-                <div className='partnersSlider'>
+                <div className="partnersSlider">
                   <PartnersSlider />
                 </div>
               </div>
-              <div className='introBtnsGroup'>
-                <Button onClick={() => setModal2Open(true)}>Cтать партнером</Button>
-                <Button onClick={() => setModalOpen(true)}>Стать участником выставки</Button>
+              <div className="introBtnsGroup">
+                <Button onClick={() => setModal2Open(true)}>
+                  {t("partner.button1")}
+                </Button>
+                <Button onClick={() => setModalOpen(true)}>
+                  {t("partner.button2")}
+                </Button>
                 <Modal
                   // title='Vertically centered modal dialog'
                   centered
                   open={modal2Open}
                   onOk={() => setModal2Open(false)}
                   onCancel={() => setModal2Open(false)}
-                  className='modalBecomeAMember'
+                  className="modalBecomeAMember"
                 >
                   <ModalBecomePartner />
                 </Modal>
@@ -85,39 +83,36 @@ const IntroBlock = () => {
                   open={modalOpen}
                   onOk={() => setModalOpen(false)}
                   onCancel={() => setModalOpen(false)}
-                  className='modalBecomeAMember'
+                  className="modalBecomeAMember"
                 >
                   <ModalBecomeAMember />
                 </Modal>
               </div>
             </div>
-            <div className='winnerBlock'>
-              <div className='winnerTitle'>
-                <h2 className='title'>100+ Призов</h2>
+            <div className="winnerBlock">
+              <div className="winnerTitle">
+                <h2 className="title">{t("winner.title")}</h2>
               </div>
-              <div className='winnerSubtitle'>
-                <p className='subTitle'>
-                  Следите за новостями в наших социальных сетях и не упустите шанс выиграть{" "}
-                  <Link
-                    href='#contacts'
-                    className='registartionBtn'
-                  >
-                    Iphone 16 Pro Max
+              <div className="winnerSubtitle">
+                <p className="subTitle">
+                  {t("winner.title2")}
+                  <Link href="#contacts" className="registartionBtn">
+                    {t("winner.title2green")}
                   </Link>
                 </p>
 
-                <div className='socials'>
+                <div className="socials">
                   <a
-                    href='https://t.me/EmotionFestival'
-                    target='_blank'
-                    className='social'
+                    href="https://t.me/EmotionFestival"
+                    target="_blank"
+                    className="social"
                   >
                     <FaTelegramPlane />
                   </a>
                   <a
-                    href='https://www.instagram.com/emotionfestival/'
-                    target='_blank'
-                    className='social'
+                    href="https://www.instagram.com/emotionfestival/"
+                    target="_blank"
+                    className="social"
                   >
                     <FaInstagram />
                   </a>

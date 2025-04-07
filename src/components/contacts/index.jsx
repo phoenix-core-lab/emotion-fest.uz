@@ -4,8 +4,11 @@ import { IMaskInput } from "react-imask";
 import { toast } from "react-toastify";
 import Button from "../UI/button";
 import "./styles.sass";
+import { useTranslations } from "next-intl";
 
 const Contacts = () => {
+  const t = useTranslations("registionblock");
+  const t2 = useTranslations("registion");
   const phoneMask = "+998 (00) 000-00-00";
   const Mask = [
     {
@@ -41,9 +44,9 @@ const Contacts = () => {
       }),
     });
     if (response.status === 200 || response.status === 201) {
-      toast.success("Поздравялем, ваша заявка принята!");
+      toast.success(t2("toast.success"));
     } else {
-      toast.error("К сожалению, что-то пошло не так, попробуйте еще раз :(");
+      toast.error(t2("toast.error"));
     }
     setFormData({
       fullName: "",
@@ -57,42 +60,33 @@ const Contacts = () => {
     <section className="sectionContacts" id="contacts">
       <div className="container">
         <div className="contactsContainer">
-          <div className="blurContainer">
+          {/* <div className="blurContainer">
             <h3>
-              Регистрация на участие откроется совсем скоро. <br /> Не упустите шанс
-              посетить уникальное мероприятие!
+              {t("title")}
+              <br />
+              {t("title2")}
             </h3>
-          </div>
+          </div> */}
           <div className="contactsInfo">
             <div className="contactsTitle">
-              <h3 className="title">Станьте гостем фестиваля.</h3>
+              <h3 className="title">{t("guest.title")}</h3>
             </div>
             <div className="contactsText">
-              <p className="text">
-                Ждем вас на фестивале E-motion! Это два дня активностей и
-                открытий в мире экологичного транспорта.
-              </p>
-              <p className="text">
-                Полезный опыт для гостей всех возрастов: образовательные
-                мастер-классы, тест-драйвы электроавтомобилей, стенды с
-                VR-технологиями и интерактивными зонами отдыха.
-              </p>
+              <p className="text">{t("guest.titletext1")}</p>
+              <p className="text">{t("guest.titletext2")}</p>
             </div>
             <div className="contactsText">
-              <p className="text">Зарегистрируйтесь прямо сейчас!</p>
-              <p className="text"> Вместе мы создаем будущее!</p>
+              <p className="text">{t("guest.titletext3")}</p>
+              <p className="text">{t("guest.titletext4")}</p>
             </div>
           </div>
-          <form
-            className="contactsForm"
-            // onSubmit={handleSubmit}
-          >
+          <form className="contactsForm" onSubmit={handleSubmit}>
             <div className="inputBox">
               <input
                 type="text"
                 className="input"
                 name="fullName"
-                placeholder="Ф.И.О"
+                placeholder={t2("title1")}
                 value={formData.fullName}
                 onChange={handleChange}
                 required
@@ -102,7 +96,7 @@ const Contacts = () => {
               <input
                 type="text"
                 className="input"
-                placeholder="Возраст"
+                placeholder={t2("title6")}
                 name="age"
                 value={formData.age}
                 onChange={handleChange}
@@ -113,7 +107,7 @@ const Contacts = () => {
               <input
                 type="text"
                 className="input"
-                placeholder="Город"
+                placeholder={t2("title3")}
                 name="city"
                 value={formData.city}
                 onChange={handleChange}
@@ -135,7 +129,7 @@ const Contacts = () => {
               <IMaskInput
                 name="phone"
                 className="input"
-                placeholder="Номер телефона"
+                placeholder={t2("title5")}
                 mask={Mask}
                 value={formData.phone}
                 onChange={handleChange}
@@ -144,7 +138,7 @@ const Contacts = () => {
                 required
               />
             </div>
-            <Button>Подать заявку</Button>
+            <Button>{t2("button")}</Button>
           </form>
         </div>
       </div>
