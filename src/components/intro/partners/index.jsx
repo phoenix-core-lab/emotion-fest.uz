@@ -45,14 +45,16 @@ const PartnersSlider = () => {
         {PartnersSlideImages.map((item, index) => (
           <SwiperSlide key={index}>
             <div className="imagesBlock">
-              <Image src={item.img} alt={item.alt} width={100} height={100} />
-              <p style={{ whiteSpace: "pre-line" }} className="text">
+              <a href={item.link}>
+                <Image src={item.img} alt={item.alt} width={200} height={200} />
+              </a>
+              {/* <p style={{ whiteSpace: "pre-line" }} className="text">
                 {item.title}
                 <br />
                 <a href={item.link} target="_blank" rel="noopener noreferrer">
                   {item.link}
                 </a>
-              </p>
+              </p> */}
             </div>
           </SwiperSlide>
         ))}
