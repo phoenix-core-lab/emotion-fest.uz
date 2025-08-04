@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "../UI/button";
+import Image from "next/image";
 import "./styles.sass";
 import { useTranslations } from "next-intl";
 
@@ -10,7 +11,7 @@ const ProgramBLock = () => {
       <div className="programBlockCard">
         <div className="cardItem">
           <div className="imgeContainer">
-            <img src="/open.jpg" alt="welcomeFirstImage" className="img" />
+            <Image src="/open.jpg" alt="welcomeFirstImage" className="img" />
           </div>
         </div>
         <div className="cardItem">

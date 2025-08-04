@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Button from "../UI/button";
+import Image from "next/image";
 import "./styles.sass";
 import ModalBecomeAMember from "../modalBecomeAMember";
 import { Modal } from "antd";
@@ -35,7 +36,7 @@ const ShowPage = () => {
         </div>
         <div className="cardItem">
           <div className="imgeContainer">
-            <img src="/open.jpg" alt="welcomeFirstImage" className="img" />
+            <Image src="/open.jpg" alt="welcomeFirstImage" className="img" />
           </div>
         </div>
       </div>

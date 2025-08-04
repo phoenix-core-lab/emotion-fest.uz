@@ -1,5 +1,6 @@
 import React from "react";
 import "./styles.sass";
+import Image from "next/image";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 
@@ -27,7 +28,7 @@ const Unique = () => {
           </div>
           <div className="uniqueItem itemBottom">
             <div className="imageUniqueBlock littleImage">
-              <img src="/unicCard.jpeg" alt="cars" className="img" />
+              <Image src="/unicCard.jpeg" alt="cars" className="img" />
               <div className="imageCover">
                 <div className="coverContainer">
                   <div className="coverTitle">
@@ -42,7 +43,7 @@ const Unique = () => {
               </div>
             </div>
             <div className="imageUniqueBlock maxImage">
-              <img src="/carImage.jpg" alt="uniqueImage" className="img" />
+              <Image src="/carImage.jpg" alt="uniqueImage" className="img" />
               <div className="imageCover">
                 <div className="coverContainer">
                   <div className="coverTitleFull">

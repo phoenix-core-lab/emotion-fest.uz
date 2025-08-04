@@ -1,4 +1,5 @@
 import { Montserrat } from "next/font/google";
+import Image from "next/image";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import Script from "next/script";
@@ -53,7 +54,7 @@ export default async function RootLayout({ children, params }) {
       <body className={montserrat.className}>
         <noscript>
           <div>
-            <img
+            <Image
               src="https://mc.yandex.ru/watch/100373346"
               style={{ position: "absolute", left: "-9999px" }}
               alt=""

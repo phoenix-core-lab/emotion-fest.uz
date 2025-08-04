@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "../UI/button";
+import Image from "next/image";
 import "./styles.sass";
 import { useTranslations } from "next-intl";
 
@@ -14,7 +15,7 @@ const WelcomeToFest = () => {
         <div className="welcomeCard">
           <div className="cardItem">
             <div className="imgeContainer">
-              <img src="/car3.png" alt="welcomeFirstImage" className="img" />
+              <Image src="/car3.png" alt="welcomeFirstImage" className="img" />
             </div>
           </div>
           <div className="itemNumber">
@@ -55,7 +56,7 @@ const WelcomeToFest = () => {
           </div>
           <div className="cardItem">
             <div className="imgeContainer">
-              <img src="/family2.png" alt="introImage" className="img" />
+              <Image src="/family2.png" alt="introImage" className="img" />
             </div>
           </div>
         </div>

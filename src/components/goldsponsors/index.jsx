@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import "./styles.sass";
 
 const GoldSponsors = () => {
@@ -12,7 +13,7 @@ const GoldSponsors = () => {
                 <h3 className='title'>Генеральный партнер</h3>
               </div>
               <div className='goldItem'>
-                <img
+                <Image
                   className='img'
                   src='/car2.jpg'
                   alt=''
@@ -24,7 +25,7 @@ const GoldSponsors = () => {
                 <h3 className='title'>Официальный партнер</h3>
               </div>
               <div className='goldItem'>
-                <img
+                <Image
                   className='img'
                   src='/car2.jpg'
                   alt=''
